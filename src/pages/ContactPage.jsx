@@ -4,7 +4,67 @@ import userDetails from '../data/userDetails';
 const ContactPage = () => {
   return (
     <div className="grid place-items-center h-full p-5">
-      <p className="text-gray-500 italic max-w-xl mt-5 md:mt-10">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+      <div className="w-full lg:w-px">
+        <div className="flex flex-col lg:flex-row">
+          <h1 className="m-4 inline-block text-2xl font-bold font-press-start">
+            Contacto
+          </h1>
+        </div>
+
+        <div className="m-4">
+          <form className="w-full">
+            <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="w-full px-3">
+                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                  Name
+                </label>
+                <input
+                  className="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="name"
+                  type="text"
+                  placeholder="Name"
+                />
+              </div>
+            </div>
+            <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="w-full px-3">
+                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                  E-mail
+                </label>
+                <input
+                  className="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="email"
+                  type="email"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+            <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="w-full px-3">
+                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                  Message
+                </label>
+                <textarea
+                  className="no-resize appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                  id="message"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+            </div>
+            <div className="md:flex md:items-center">
+              <div className="md:w-1/3">
+                <button
+                  className="shadow bg-black hover:bg-gray-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                  type="button"
+                >
+                  Send
+                </button>
+              </div>
+              <div className="md:w-2/3"></div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };

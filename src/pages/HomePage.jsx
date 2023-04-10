@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FiInstagram, FiMail } from 'react-icons/fi';
 
+
 import avatar_1 from '/assets/avatar_1.jpeg';
 import avatar_2 from '/assets/avatar_2.jpeg';
 import avatar_3 from '/assets/avatar_3.jpeg';
@@ -75,6 +76,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+ 
     </div>
   );
 };

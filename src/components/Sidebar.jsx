@@ -12,8 +12,8 @@ const Sidebar = () => {
     isActive ? activeStyles : inactiveStyles;
 
   return (
-    <aside className="bg-gray-200 p-4 w-full h-full hidden xl:block xl:w-96 lg:h-auto">
-      <div className="flex flex-col items-center justify-center h-full  border-r border-gray-200 bg-white">
+    <aside className="p-4 w-full h-full hidden xl:block xl:w-96 lg:h-auto shadow">
+      <div className="flex flex-col items-center justify-center h-full p-10">
         <div className="w-full flex flex-col items-center justify-center">
           <div>
             <h1 className="text-5xl leading-tight font-mono font-black">AMG</h1>
@@ -23,32 +23,31 @@ const Sidebar = () => {
               <li className="flex items-center">
                 <NavLink to="/" className={getLinkStyles}>
                   <FiHome className="h-5 w-5 mr-1" />
-                  Home
+                  Inicio
                 </NavLink>
               </li>
               <li className="flex items-center">
                 <NavLink to="/about" className={getLinkStyles}>
                   <FiUser className="h-5 w-5 mr-1" />
-                  About
+                  Acerca de mi
                 </NavLink>
               </li>
               <li className="flex items-center">
                 <NavLink to="/portfolio" className={getLinkStyles}>
                   <FiBriefcase className="h-5 w-5 mr-1" />
-                  Portfolio
+                  Portafolio
                 </NavLink>
               </li>
               <li className="flex items-center">
                 <NavLink to="/contact" className={getLinkStyles}>
                   <FiMail className="h-5 w-5 mr-1" />
-                  Contact
+                  Contacto
                 </NavLink>
               </li>
             </ul>
 
-            <p className="text-gray-500 italic mt-5 antialiased text-sm">
-              {' '}
-              &#64; 2023 All Rights Reserved
+            <p className="text-gray-500 italic mt-5 antialiased text-xs">
+              &#64;2023 Todos los Derechos Reservados
             </p>
           </div>
         </div>

@@ -8,7 +8,7 @@ const Navbar = () => {
   const getLinkStyles = ({ isActive, isPending }) => isActive ? activeStyles : inactiveStyles;
 
   return (
-    <header className="bg-gray-100 p-4 w-full z-10 h-16 xl:hidden">
+    <header className="bg-gray-100 p-4 sticky top-0 left-0  w-full z-10 h-16 xl:hidden shadow">
       <div className="flex flex-row items-center justify-between ">
         <h1 className="text-3xl leading-tight font-mono font-black">AMG</h1>
         <span className="inline-flex space-x-3">

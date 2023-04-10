@@ -3,9 +3,11 @@ import { Outlet } from 'react-router-dom';
 
 const Content = () => {
   return (
-    <main className="container mx-auto w-full h-full lg:flex-grow lg:h-auto overflow-y-auto">
-      <Outlet />
-    </main>
+    <div className="container mx-auto lg:h-auto bg-stone-200 lg:overflow-y-scroll">
+      <main className="w-full h-full lg:flex-grow ">
+        <Outlet />
+      </main>
+    </div>
   );
 };
 

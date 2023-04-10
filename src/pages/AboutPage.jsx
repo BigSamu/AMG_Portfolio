@@ -6,7 +6,7 @@ import about from '/assets/about.jpeg';
 const AboutPage = () => {
   return (
     <div className="grid place-items-center h-full p-5">
-      <div className="w-full lg:w-8/12 px-5 flex flex-col items-start justify-center space-y-5 lg:space-x-0 ">
+      <div className="w-full lg:w-8/12 p-5 flex flex-col items-start justify-center space-y-5 lg:space-x-0 ">
         <div>
           <img src={about} className="rounded-md lg:w-full" />
         </div>
@@ -51,11 +51,13 @@ const AboutPage = () => {
                     </tr>
                   </tbody>
                 </table>
+                
               </div>
             </div>
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
