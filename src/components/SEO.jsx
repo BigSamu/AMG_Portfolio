@@ -19,6 +19,7 @@ const SEO = ({ title }) => {
         <meta property="og:description" content={metaTags.description} />
         <meta property="og:image" content={metaTags.image} />
         <meta property="og:url" content={metaTags.url} />
+        <meta property="og:site_name" content="AMG ART" />
         {/* End Facebook tags */}
         {/* Twitter tags */}
         <meta name="twitter:creator" content={metaTags.name} />
