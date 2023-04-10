@@ -16,28 +16,28 @@ const Navbar = () => {
             to="/"
             className={getLinkStyles}
           >
-            <span className="sr-only">Hone</span>
+            <span className="sr-only">Inicio</span>
             <FiHome className="h-7 w-7" />
           </NavLink>
           <NavLink
             to="/about"
             className={getLinkStyles}
           >
-            <span className="sr-only">About</span>
+            <span className="sr-only">Acerca de mi</span>
             <FiUser className="h-7 w-7" />
           </NavLink>
           <NavLink
             to="/portfolio"
             className={getLinkStyles}
           >
-            <span className="sr-only">Portfolio</span>
+            <span className="sr-only">Portafolio</span>
             <FiBriefcase className="h-7 w-7" />
           </NavLink>
           <NavLink
             to="/contact"
             className={getLinkStyles}
           >
-            <span className="sr-only">Contact</span>
+            <span className="sr-only">Contacto</span>
             <FiMail className="h-7 w-7" />
           </NavLink>
         </span>
