@@ -7,7 +7,7 @@ import metaTags from '../data/metaTags';
 const SEO = ({ title }) => {
   return (
     <>
-      <Helmet>
+      <Helmet defer={false}>
         {/* Standard metadata tags */}
         <title>{title}</title>
         <meta name="title" content={metaTags.title} />
