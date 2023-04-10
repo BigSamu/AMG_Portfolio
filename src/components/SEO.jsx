@@ -8,12 +8,12 @@ const SEO = ({ title }) => {
   return (
     <>
       <Helmet defer={false}>
-        {/* Standard metadata tags */}
+        
         <title>{title}</title>
-        <meta name="title" content={metaTags.title} />
+        {/* <meta name="title" content={metaTags.title} />
         <meta name="description" content={metaTags.description} />
 
-        {/* Open Graph / Facebook tags */}
+    
         <meta property="og:type" content={metaTags.type} />
         <meta property="og:title" content={metaTags.title} />
         <meta property="og:description" content={metaTags.description} />
@@ -21,11 +21,11 @@ const SEO = ({ title }) => {
         <meta property="og:url" content={metaTags.url} />
         <meta property="og:site_name" content="AMG ART" />
 
-        {/* Twitter tags */}
+      
         <meta name="twitter:creator" content={metaTags.name} />
         <meta name="twitter:card" content={metaTags.type} />
         <meta name="twitter:title" content={metaTags.title} />
-        <meta name="twitter:description" content={metaTags.description} />
+        <meta name="twitter:description" content={metaTags.description} /> */}
       </Helmet>
     </>
   );
