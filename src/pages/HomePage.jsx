@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet';
+import SEO from '../components/SEO';
 
 import { FiInstagram, FiMail } from 'react-icons/fi';
 import avatar_1 from '/assets/avatar_1.jpeg';
@@ -27,9 +27,7 @@ const HomePage = () => {
 
   return (
     <>
-      <Helmet>
-        <title>AMG | Inicio</title>
-      </Helmet>
+      <SEO title ="AMG | Inicio"/>
 
       <div className="grid place-items-center h-full p-5">
         <div className="flex flex-col lg:flex-row items-center justify-center space-y-7 lg:space-y-0 lg:space-x-14">

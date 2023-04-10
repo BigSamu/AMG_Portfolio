@@ -1,15 +1,14 @@
 import React from 'react';
-import {Helmet} from 'react-helmet';
+import SEO from '../components/SEO';
 
-import userDetails from '../data/userDetails';
+
 import under_construction from '/assets/under_construction.png';
 
 const PortfolioPage = () => {
   return (
     <>
-      <Helmet>
-        <title>AMG | Portafolio</title>
-      </Helmet>
+      <SEO title="AMG | Portafolio</title" />
+
       <div className="grid place-items-center h-full p-5">
         <div className="flex flex-col items-center justify-center">
           <h1 className="mb-5">Portfolio Page</h1>

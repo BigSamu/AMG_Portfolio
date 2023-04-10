@@ -1,15 +1,11 @@
 import React from 'react';
-import {Helmet} from 'react-helmet';
-
-import userDetails from '../data/userDetails';
+import SEO from '../components/SEO';
 
 const ContactPage = () => {
   return (
     <>
-      <Helmet>
-        <title>AMG | Contacto</title>
-      </Helmet>
-
+      
+      <SEO title="AMG | Contacto" />
       <div className="grid place-items-center h-full p-5">
         <div className="w-full lg:w-px">
           <div className="flex flex-col lg:flex-row">
