@@ -29,13 +29,13 @@ const HomePage = () => {
     <>
       <SEO title ="AMG | Inicio"/>
 
-      <div className="grid place-items-center h-full p-5">
+      <div className="min-h-[calc(100vh-4rem-2rem)] xl:min-h-screen grid place-items-center h-full p-5">
         <div className="flex flex-col lg:flex-row items-center justify-center space-y-7 lg:space-y-0 lg:space-x-14">
           <div className="w-56 h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-md relative">
             {images.map((image, index) => (
               <img
                 key={index}
-                className="w-full h-autorounded"
+                className="w-full h-full rounded shadow"
                 src={image}
                 alt={`Image ${index + 1}`}
                 style={{

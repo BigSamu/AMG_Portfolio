@@ -8,7 +8,7 @@ const AboutPage = () => {
   return (
     <>
       <SEO title ="AMG | Acerca de mi"/>
-      <div className="grid place-items-center h-full p-5">
+      <div className="min-h-[calc(100vh-4rem-2rem)] xl:min-h-screen grid place-items-center p-5">
         <div className="w-full lg:w-8/12 p-5 flex flex-col items-start justify-center space-y-5 lg:space-x-0 ">
           <div>
             <img src={about} className="rounded-md lg:w-full" />

@@ -6,7 +6,7 @@ const ContactPage = () => {
     <>
       
       <SEO title="AMG | Contacto" />
-      <div className="grid place-items-center h-full p-5">
+      <div className=" min-h-[calc(100vh-4rem-2rem)] xl:min-h-screen grid place-items-center h-full p-5">
         <div className="w-full lg:w-px">
           <div className="flex flex-col lg:flex-row">
             <h1 className="m-4 inline-block text-2xl font-bold font-press-start">
