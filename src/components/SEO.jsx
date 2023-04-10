@@ -5,6 +5,7 @@ import avatar_1 from '/assets/avatar_1.jpeg';
 import metaTags from '../data/metaTags';
 
 const SEO = ({ title }) => {
+ 
   return (
     <>
       <Helmet>
@@ -16,7 +17,7 @@ const SEO = ({ title }) => {
         <meta property="og:type" content={metaTags.type} />
         <meta property="og:title" content={metaTags.title} />
         <meta property="og:description" content={metaTags.description} />
-        <meta property="og:image" content={avatar_1} />
+        <meta property="og:image" content={metaTags.image} />
         <meta property="og:url" content={metaTags.url} />
         {/* End Facebook tags */}
         {/* Twitter tags */}

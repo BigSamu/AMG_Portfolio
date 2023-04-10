@@ -1,7 +1,8 @@
 export default {
     name: 'Ana Maria Gutierrez',
     type: 'Website',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    url: 'www.anamariagutierrez.art'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
+    url: 'www.anamariagutierrez.art',
+    image:'https://anamariagutierrez.art/assets/avatar_4.jpeg'
   };
   
