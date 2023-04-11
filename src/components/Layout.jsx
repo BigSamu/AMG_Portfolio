@@ -9,7 +9,7 @@ const Layout = () => {
   return (
     <>
       <Navbar />
-      <div className="flex">
+      <div className="flex min-h-[calc(100vh-4rem-2rem)] xl:min-h-screen">
         <Sidebar/>
         <Content/>
       </div>
