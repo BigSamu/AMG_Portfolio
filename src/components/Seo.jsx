@@ -10,14 +10,14 @@ const Seo = ({ title }) => {
         <title>{title}</title>
 
         {/* I) Primary Meta Tags */}
-        <meta property="title" content="Ana Maria Gutierrez ART" />
+        {/* <meta property="title" content="Ana Maria Gutierrez ART" />
         <meta
           property="description"
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
-        />
+        /> */}
 
         {/* II) Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
+        {/* <meta property="og:type" content="website" />
         <meta property="og:title" content="Ana Maria Gutierrez ART" />
         <meta property="og:site_name" content="Ana Maria Gutierrez ART" />
         <meta
@@ -28,10 +28,10 @@ const Seo = ({ title }) => {
           property="og:image"
           content="https://anamariagutierrez.art/assets/preview.jpeg"
         />
-        <meta property="og:url" content="https://www.anamariagutierrez.art/" />
+        <meta property="og:url" content="https://www.anamariagutierrez.art/" /> */}
 
         {/* III) Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
+        {/* <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Ana Maria Gutierrez ART" />
         <meta
           name="twitter:description"
@@ -41,7 +41,7 @@ const Seo = ({ title }) => {
           property="twitter:image"
           content="https://anamariagutierrez.art/assets/preview.jpeg"
         />
-        <meta name="twitter:url" content="https://www.anamariagutierrez.art/" />
+        <meta name="twitter:url" content="https://www.anamariagutierrez.art/" /> */}
       </Helmet>
     </>
   );
