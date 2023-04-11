@@ -9,9 +9,9 @@ import PortfolioPage from './pages/PortfolioPage';
 import ContactPage from './pages/ContactPage';
 
 function App() {
-  const helmetContext = {};
+  
   return (
-    <HelmetProvider context={helmetContext}>
+   
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
@@ -24,7 +24,6 @@ function App() {
         </Route>
       </Routes>
       
-    </HelmetProvider>
   );
 }
 
