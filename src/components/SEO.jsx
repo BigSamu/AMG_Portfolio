@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-import avatar_1 from '/assets/avatar_1.jpeg';
 import metaTags from '../data/metaTags';
 
 const Seo = ({ title }) => {
