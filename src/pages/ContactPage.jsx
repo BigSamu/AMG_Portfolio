@@ -1,5 +1,5 @@
 import React from 'react';
-import Seo from '../components/Seo1';
+import Seo from '../components/Seo';
 
 const ContactPage = () => {
   return (

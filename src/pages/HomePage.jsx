@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Seo from '../components/Seo1';
+import Seo from '../components/Seo';
 
 import { FiInstagram, FiMail } from 'react-icons/fi';
 import avatar_1 from '/assets/avatar_1.jpeg';
