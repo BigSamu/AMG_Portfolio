@@ -20,8 +20,10 @@ function App() {
           <Route path="contact" element={<ContactPage />} />
 
           {/* <Route path="*" element={<NoMatch />} /> */}
+          
         </Route>
       </Routes>
+      
     </HelmetProvider>
   );
 }

@@ -9,11 +9,11 @@ const Layout = () => {
   return (
     <>
       <Navbar />
-      <div className="flex min-h-[calc(100vh-4rem-2rem)] xl:min-h-screen">
-        <Sidebar/>
-        <Content/>
+      <div className="flex min-h-[calc(100vh-4rem-2rem)] lg:h-screen">
+        <Sidebar />
+        <Content />
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };
