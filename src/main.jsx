@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React, {StrictMode} from 'react';
+import {createRoot} from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 // importing the provider
@@ -10,12 +10,15 @@ import './index.css';
 
 const helmetContext = {};
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
+
+root.render(
+  <StrictMode>
     <HelmetProvider context={helmetContext}>
       <Router>
         <App />
       </Router>
     </HelmetProvider>
-  </React.StrictMode>
+  </StrictMode>
 );
