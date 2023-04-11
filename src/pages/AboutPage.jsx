@@ -1,5 +1,5 @@
 import React from 'react';
-import SEO from '../components/SEO';
+import Seo from '../components/Seo';
 
 import userDetails from '../data/userDetails';
 import about from '/assets/about.jpeg';
@@ -7,7 +7,7 @@ import about from '/assets/about.jpeg';
 const AboutPage = () => {
   return (
     <>
-      <SEO title ="AMG | Acerca de mi"/>
+      <Seo title="AMG | Acerca de mi" />
       <div className="grid place-items-center h-full p-5">
         <div className="w-full lg:w-8/12 p-5 flex flex-col items-start justify-center space-y-5 lg:space-x-0 ">
           <div>

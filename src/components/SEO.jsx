@@ -4,31 +4,48 @@ import { Helmet } from 'react-helmet-async';
 import avatar_1 from '/assets/avatar_1.jpeg';
 import metaTags from '../data/metaTags';
 
-const SEO = ({ title }) => {
+const Seo = ({ title }) => {
   return (
     <>
       <Helmet defer={false}>
-        
         <title>{title}</title>
-        {/* <meta name="title" content={metaTags.title} />
-        <meta name="description" content={metaTags.description} />
 
-    
-        <meta property="og:type" content={metaTags.type} />
-        <meta property="og:title" content={metaTags.title} />
-        <meta property="og:description" content={metaTags.description} />
-        <meta property="og:image" content={metaTags.image} />
-        <meta property="og:url" content={metaTags.url} />
-        <meta property="og:site_name" content="AMG ART" />
+        {/* I) Primary Meta Tags */}
+        <meta property="title" content="Ana Maria Gutierrez ART" />
+        <meta
+          property="description"
+          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+        />
 
-      
-        <meta name="twitter:creator" content={metaTags.name} />
-        <meta name="twitter:card" content={metaTags.type} />
-        <meta name="twitter:title" content={metaTags.title} />
-        <meta name="twitter:description" content={metaTags.description} /> */}
+        {/* II) Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Ana Maria Gutierrez ART" />
+        <meta property="og:site_name" content="Ana Maria Gutierrez ART" />
+        <meta
+          property="og:description"
+          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+        />
+        <meta
+          property="og:image"
+          content="https://anamariagutierrez.art/assets/preview.jpeg"
+        />
+        <meta property="og:url" content="https://www.anamariagutierrez.art/" />
+
+        {/* III) Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ana Maria Gutierrez ART" />
+        <meta
+          name="twitter:description"
+          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+        />
+        <meta
+          property="twitter:image"
+          content="https://anamariagutierrez.art/assets/preview.jpeg"
+        />
+        <meta name="twitter:url" content="https://www.anamariagutierrez.art/" />
       </Helmet>
     </>
   );
 };
 
-export default SEO;
+export default Seo;
