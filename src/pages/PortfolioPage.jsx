@@ -12,7 +12,6 @@ const PortfolioPage = () => {
         <div className="flex flex-col items-center justify-center">
           <h1 className="mb-5">Portfolio Page</h1>
           <img src={under_construction} />
-          <img src={under_construction} />
         </div>
       </div>
     </>
