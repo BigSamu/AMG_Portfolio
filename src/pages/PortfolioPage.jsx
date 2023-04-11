@@ -1,5 +1,5 @@
 import React from 'react';
-import Seo from '../components/Seo';
+import Seo from '../components/Seo1';
 
 import under_construction from '/assets/under_construction.png';
 
