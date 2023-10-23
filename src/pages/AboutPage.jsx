@@ -7,9 +7,9 @@ const AboutPage = () => {
   return (
 
       <div className="grid place-items-center min-h-[calc(100vh-4rem)] xl:min-h-screen p-5">
-        <div className="w-full max-w-3xl h-full p-5 flex flex-col items-start justify-center space-y-5 lg:space-x-0 ">
+        <div className="w-full max-w-3xl h-full p-5 flex flex-col items-start justify-center space-y-6 lg:space-x-0 ">
 
-          <img src={about} className="rounded-md w-full object-contain" />
+          <img src={about} className="rounded-md object-contain w-full md:w-3/4 mx-auto" />
 
           <div className="flex flex-col items-start lg:w-full">
             <h1 className="text-2xl font-bold lg:w-full">
