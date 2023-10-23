@@ -5,13 +5,13 @@ import Content from './Content';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
 
-const Layout = () => {
+const Layout = ({children}) => {
   return (
     <>
       <Navbar />
-      <div className="flex min-h-[calc(100vh-4rem-2rem)] lg:h-screen">
+      <div className="flex xl:h-screen">
         <Sidebar />
-        <Content />
+        <Content>{children}</Content>
       </div>
       <Footer />
     </>

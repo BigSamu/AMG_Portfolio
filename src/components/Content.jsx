@@ -1,13 +1,12 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
-const Content = () => {
+const Content = ({children}) => {
   return (
-    <div className="container mx-auto lg:h-auto bg-stone-200 lg:overflow-y-scroll">
-      <main className="w-full h-full lg:flex-grow ">
-        <Outlet />
-      </main>
-    </div>
+    <main id="content-container" className="w-full h-full bg-stone-200 xl:overflow-y-auto">
+      {/* <Outlet /> */}
+      {children}
+    </main>
   );
 };
 

@@ -1,18 +1,21 @@
-import React from 'react';
-import { FiHome, FiUser, FiBriefcase, FiMail } from 'react-icons/fi';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { FiHome, FiUser, FiBriefcase, FiMail } from "react-icons/fi";
+import { Link as ScrollLink } from "react-scroll";
 
-import userDetails from '../data/userDetails';
+import userDetails from "../data/userDetails";
 
 const Sidebar = () => {
-  const activeStyles = 'flex items-center text-black underline';
+  const activeStyles = "flex items-center !text-black underline";
   const inactiveStyles =
-    'flex items-center text-gray-400 hover:text-gray-600 cursor';
+    "flex items-center text-gray-400 hover:text-gray-600 cursor cursor-pointer";
+
+  //   const activeStyles = "text-black border-b-2 border-black";
+  // const inactiveStyles = "text-gray-400 hover:text-gray-600 cursor";
   const getLinkStyles = ({ isActive, isPending }) =>
     isActive ? activeStyles : inactiveStyles;
 
   return (
-    <aside className="p-4 w-full h-full hidden xl:block xl:w-96 lg:h-auto shadow">
+    <aside className="p-4 w-full h-full hidden xl:block xl:w-96 shadow">
       <div className="flex flex-col items-center justify-center h-full p-10">
         <div className="w-full flex flex-col items-center justify-center">
           <div>
@@ -21,28 +24,56 @@ const Sidebar = () => {
 
             <ul className="list-inside list-none text-left mt-10 space-y-2 font-press-start font-bold">
               <li className="flex items-center">
-                <NavLink to="/" className={getLinkStyles}>
+                <ScrollLink
+                  activeClass={activeStyles}
+                  className={inactiveStyles}
+                  to="home"
+                  containerId="content-container"
+                  spy={true}
+                  smooth={true}
+                >
                   <FiHome className="h-5 w-5 mr-1" />
                   Inicio
-                </NavLink>
+                </ScrollLink>
               </li>
               <li className="flex items-center">
-                <NavLink to="/about" className={getLinkStyles}>
+                <ScrollLink
+                  activeClass={activeStyles}
+                  className={inactiveStyles}
+                  to="about"
+                  containerId="content-container"
+                  spy={true}
+                  smooth={true}
+                >
                   <FiUser className="h-5 w-5 mr-1" />
                   Acerca de mi
-                </NavLink>
+                </ScrollLink>
               </li>
               <li className="flex items-center">
-                <NavLink to="/portfolio" className={getLinkStyles}>
+                <ScrollLink
+                  activeClass={activeStyles}
+                  className={inactiveStyles}
+                  to="portfolio"
+                  containerId="content-container"
+                  spy={true}
+                  smooth={true}
+                >
                   <FiBriefcase className="h-5 w-5 mr-1" />
                   Portafolio
-                </NavLink>
+                </ScrollLink>
               </li>
               <li className="flex items-center">
-                <NavLink to="/contact" className={getLinkStyles}>
+                <ScrollLink
+                  activeClass={activeStyles}
+                  className={inactiveStyles}
+                  to="contact"
+                  containerId="content-container"
+                  spy={true}
+                  smooth={true}
+                >
                   <FiMail className="h-5 w-5 mr-1" />
                   Contacto
-                </NavLink>
+                </ScrollLink>
               </li>
             </ul>
 
