@@ -19,7 +19,7 @@ const AboutPage = () => {
             <div className="flex flex-col xl:flex-row gap-3 mt-3">
               <p className="text-gray-500 italic">{userDetails.biography}</p>
 
-              <div className="flex-grow">
+              {/* <div className="flex-grow">
                 <table>
                   <tbody>
                     <tr>
@@ -48,7 +48,7 @@ const AboutPage = () => {
                     </tr>
                   </tbody>
                 </table>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
