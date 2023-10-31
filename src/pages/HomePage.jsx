@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 import { FiInstagram, FiMail } from "react-icons/fi";
 import avatar_1 from "/assets/avatar_1.jpeg";
@@ -57,13 +58,16 @@ const HomePage = () => {
           </p>
           <div>
             <span className="inline-flex justify-center space-x-2 sm:ml-auto sm:mt-0 sm:justify-start">
-              <a
-                href={`mailto:${userDetails.email}`}
-                className="hover:text-gray-500"
+              <ScrollLink
+                  to="contact"
+                  containerId="content-container"
+                  spy={true}
+                  smooth={true}
+                  className="hover:text-gray-500"
               >
                 <span className="sr-only">Email</span>
                 <FiMail className="w-7 h-7" />
-              </a>
+              </ScrollLink>
 
               <a
                 href={userDetails.instagram}

@@ -9,7 +9,6 @@ const PortfolioMenu = ({ selectedAlbum, setSelectedAlbum }) => {
   );
 
   useEffect(() => {
-    console.log(menuItems)
     let activeAlbum = menuItems.find((item) => item.active === true)
     let albumToUpdate = imagesData.find((item) =>
       item.album === activeAlbum.label.toLowerCase().replace(/\s+/g, '-')

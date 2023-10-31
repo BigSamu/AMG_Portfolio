@@ -1,7 +1,7 @@
 import React from "react";
-import { FiHome, FiUser, FiBriefcase, FiMail } from "react-icons/fi";
 import { Link as ScrollLink } from "react-scroll";
 
+import { FiHome, FiUser, FiBriefcase, FiMail } from "react-icons/fi";
 import userDetails from "../data/userDetails";
 
 const Sidebar = () => {

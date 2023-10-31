@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Element } from "react-scroll";
+import { ToastProvider } from "./contexts/ToastContext";
 
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
@@ -16,21 +17,22 @@ function App() {
 
     //   </Route>
     // </Routes>
-
-    <Layout>
-      <Element name="home">
-        <HomePage />
-      </Element>
-      <Element name="about">
-        <AboutPage />
-      </Element>
-      <Element name="portfolio">
-        <PortfolioPage />
-      </Element>
-      <Element name="contact">
-        <ContactPage />
-      </Element>
-    </Layout>
+    <ToastProvider>
+      <Layout>
+        <Element name="home">
+          <HomePage />
+        </Element>
+        <Element name="about">
+          <AboutPage />
+        </Element>
+        <Element name="portfolio">
+          <PortfolioPage />
+        </Element>
+        <Element name="contact">
+          <ContactPage />
+        </Element>
+      </Layout>
+    </ToastProvider>
   );
 }
 
