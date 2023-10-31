@@ -53,6 +53,7 @@ const ContactForm = () => {
               name="name"
               type="text"
               placeholder="Name"
+              required
             />
           </div>
         </div>
@@ -70,6 +71,7 @@ const ContactForm = () => {
               name="email"
               type="email"
               placeholder="Email"
+              required
             />
           </div>
         </div>
@@ -86,6 +88,7 @@ const ContactForm = () => {
               id="message"
               name="message"
               placeholder="Message"
+              required
             ></textarea>
           </div>
         </div>

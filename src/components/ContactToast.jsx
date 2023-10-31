@@ -5,7 +5,6 @@ import ToastContext from '../contexts/ToastContext';
 
 const ContactToast = () => {
   const { toastInfo, setToastInfo } = useContext(ToastContext);
-  console.log(toastInfo)
 
   const backgroundColor = toastInfo.type === 'success' ? '!bg-green-200 dark:!bg-green-700' : '!bg-red-200 dark:!bg-red-700';
   const textColor = toastInfo.type === 'success' ? 'text-green-500 dark:text-green-200' : 'text-red-500 dark:text-red-200';
@@ -28,6 +27,3 @@ const ContactToast = () => {
 };
 
 export default ContactToast;
-
-
-
