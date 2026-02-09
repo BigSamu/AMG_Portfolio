@@ -24,5 +24,5 @@ jobs:
           REPO: self
           BRANCH: build # The branch name where you want to push the assets
           FOLDER: dist # The directory where your assets are generated
-          GITHUB_TOKEN: ${{ secrets.REPO_PAT }} # Use the PAT instead of GITHUB_TOKEN
-          MESSAGE: "Build: {{sha}} {msg}}" # The commit message
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Use the default GitHub token
+          MESSAGE: "Build: ${{ github.sha }} ${{ github.event.head_commit.message }}" # The commit message
